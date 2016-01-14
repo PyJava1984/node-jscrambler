@@ -297,7 +297,7 @@ exports = module.exports =
         }
         var buffer, name;
         var sPath;
-        if (cwd && files[i].indexOf(cwd) !== 0) {
+        if (cwd && files[i].indexOf && files[i].indexOf(cwd) !== 0) {
           sPath = path.join(cwd, files[i]);
         } else {
           sPath = files[i];
@@ -309,7 +309,7 @@ exports = module.exports =
         }
         // Else if it's a path and not a directory
         else if (!fs.statSync(sPath).isDirectory()) {
-          if (cwd && files[i].indexOf(cwd) === 0) {
+          if (cwd && files[i].indexOf && files[i].indexOf(cwd) === 0) {
             name = files[i].substring(cwd.length);
           } else {
             name = files[i];
