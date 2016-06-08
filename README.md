@@ -57,7 +57,7 @@ Replace the `XXXXXX` fields with your values of course. :)
 
 ## CLI
 ```bash
-npm install -g jscrambler
+npm install -g jscrambler@0
 ```
     Usage: jscrambler [source files] [options]
 
